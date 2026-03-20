@@ -273,7 +273,7 @@ struct KeyUsageValue : public ASN1Object
         brandIndicatorforMessageIdentification
     };
     /// \brief Invalid key usage
-    static const KeyUsageEnum InvalidKeyUsage = static_cast<KeyUsageEnum>(128);
+    static const KeyUsageEnum InvalidKeyUsage = static_cast<const KeyUsageEnum>(128);
 
     virtual ~KeyUsageValue() {}
 
