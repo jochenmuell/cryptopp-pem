@@ -270,10 +270,11 @@ struct KeyUsageValue : public ASN1Object
         /// \brief BGPsec Router Certificates, Certificate Revocation Lists, and Certification Requests
         bgpsecRouter,
         /// \brief Certificate profile for carrying logotypes
-        brandIndicatorforMessageIdentification
+        brandIndicatorforMessageIdentification,
+        keyusageenum_not_set = 128
     };
     /// \brief Invalid key usage
-    static const KeyUsageEnum InvalidKeyUsage = static_cast<const KeyUsageEnum>(128);
+    static const KeyUsageEnum InvalidKeyUsage = keyusageenum_not_set;
 
     virtual ~KeyUsageValue() {}
 
